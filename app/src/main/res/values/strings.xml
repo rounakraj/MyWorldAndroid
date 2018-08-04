@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">My World</string>
+    <string name="app_name1"></string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="forget"> <u>forget password</u>.</string>
+    <string name="connection_error">Unable to connect to the server, please try again later.</string>
+    <string name="firebase_url">https://luminous-inferno-7577.firebaseio.com</string>
+
+    <string name="message_elipses">Type a message</string>
+    <string name="facebook_app_id">110973272942413</string>
+
+    <string name="error_server">Connection cannot be established </string>
+    <string name="error_no_internet">No internet connection!</string>
+
+    <string name="btnTakePicture">Capture Image</string>
+    <string name="btnRecordVideo">Record Video</string>
+    <string name="or">(or)</string>
+    <string name="btnUploadToServer">Upload to Server</string>
+    <string name="chat_edit_text_hint">Message...</string>
+    <string name="chat_send">Send</string>
+    <string name="yes">Yes</string>
+    <string name="cancel">Cancel</string>
+    <string name="message">Anyone will be able to see your photos, videos and stories. You will no longer need to approve followers.</string>
+    <string name="headr">Change to Public Account?</string>
+    <string name="privateheadr">Change to Private Account?</string>
+    <string name="privatemessage">When your account is private, only people you approve can see your photos, videos and stories on Myworld. Your existing followers won\'t be affected.</string>
+    <string name="recordBtn">Record</string>
+    <string name="stopRecordBtn">Stop</string>
+    <string name="playBtn">Play</string>
+    <string name="noExtStorageAvailable">External storage is unavailable</string>
+    <string name="recordingError">Error recording audio</string>
+    <string name="saveRecordError">Error saving audio record</string>
+
+    <string name="fb_button_like">Block</string>
+    <string name="fb_button_comment">Report Content</string>
+    <string name="fb_button_share">Share</string>
+    <string name="choose_an_action_save">Save</string>
+    <string name="choose_an_action_crop">Crop</string>
+    <string name="selected_count">%1$s selected</string>
+
+    <string-array name="my_array">
+        <item>Home</item>
+        <item>Buy</item>
+        <item>Sell</item>
+        <item>Wishlist</item>
+    </string-array>
+</resources>

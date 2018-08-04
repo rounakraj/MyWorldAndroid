@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_postad"
+            android:icon="@drawable/addcircle"
+            android:title="Post Ad" />
+        <item
+            android:id="@+id/nav_MyWorld"
+            android:icon="@drawable/home"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/nav_MyAccount"
+            android:icon="@drawable/person1"
+            android:title="My Account" />
+
+        <item
+            android:id="@+id/nav_referandearn"
+            android:icon="@drawable/referandearn"
+            android:title="Refer &amp; Earn" />
+        <item
+            android:id="@+id/nav_friend"
+            android:icon="@drawable/add_friend"
+            android:title="Friend List" />
+
+        <item
+            android:id="@+id/nav_orderhistory"
+            android:icon="@drawable/order_historyicon"
+            android:title="Order History" />
+        <item
+            android:id="@+id/nav_addressbook"
+            android:icon="@drawable/address_icon"
+            android:title="Address Book" />
+        <item
+            android:id="@+id/nav_browse"
+            android:icon="@drawable/browse_category"
+            android:title="Browse Category" />
+
+        <item
+            android:id="@+id/nav_termcontion"
+            android:icon="@drawable/terms"
+            android:title="Terms &amp; Conditions" />
+
+        <item
+            android:id="@+id/nav_contactus"
+            android:icon="@drawable/call"
+            android:title="Contact us" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout"
+            android:title="Logout" />
+    </group>
+</menu>

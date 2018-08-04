@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout android:id="@+id/layout_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/category_background"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="100dp"
+            android:src="@color/colorGray"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:layout_height="150dp"/>
+
+        <TextView
+            android:id="@+id/tvItemName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Item Name "
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size14"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="INR 8,999"
+            android:textColor="#4CAF50"
+            android:textStyle="normal"
+            android:textSize="@dimen/text_size14" />
+
+            <TextView
+                android:id="@+id/tvLoadDataByName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Move to Cart"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginBottom="10dp"
+                android:textStyle="normal"
+                android:textSize="@dimen/text_size14" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+

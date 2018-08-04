@@ -1,0 +1,79 @@
+{
+  "project_info": {
+    "project_number": "207634868755",
+    "project_id": "continual-block-193315"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:207634868755:android:cb83016e69cfb74a",
+        "android_client_info": {
+          "package_name": "com.app.shopchatmyworldr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "207634868755-3enbbd5hgoa66kdlkh70du4iae5sb4bh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApK7aFvWo4vzLBy_jN5goYA4NRKhyfnI0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:207634868755:android:eee5abea6235047d",
+        "android_client_info": {
+          "package_name": "com.app.shopchatmyworldra"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "207634868755-qkcej10fnjjdsoeveajncsd4m4o1qomn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.shopchatmyworldra",
+            "certificate_hash": "c7c55c325fd72200f3dab460a422b80ea9a004f2"
+          }
+        },
+        {
+          "client_id": "207634868755-3enbbd5hgoa66kdlkh70du4iae5sb4bh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApK7aFvWo4vzLBy_jN5goYA4NRKhyfnI0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

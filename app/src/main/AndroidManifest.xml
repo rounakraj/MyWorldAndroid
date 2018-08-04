@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.app.shopchatmyworldra">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!--  Permission required for Reading Writing SD Card/Memory  -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.microphone"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+
+    <application
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/logo"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.app.shopchatmyworldra.SplashActivity"
+            android:excludeFromRecents="true"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.app.shopchatmyworldra.MainActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"
+            android:taskAffinity=".MainActivity" />
+
+        <activity
+            android:name="com.app.shopchatmyworldra.LoginActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"
+            android:taskAffinity=".LoginActivity" />
+        <activity
+            android:name="com.app.shopchatmyworldra.SignInActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"
+            android:taskAffinity=".SignInActivity" />
+
+
+        <activity
+            android:name="com.app.shopchatmyworldra.SignUpActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"
+            android:taskAffinity=".SignUpActivity" />
+
+
+        <activity
+            android:name="com.app.shopchatmyworldra.FriendListActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"
+            android:taskAffinity=".FriendListActivity" />
+
+
+        <activity
+            android:name="com.app.shopchatmyworldra.ProductDetailActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"
+            android:taskAffinity=".ProductDetailActivity" />
+        <activity
+            android:name="com.app.shopchatmyworldra.PostsAdsActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"
+            android:taskAffinity=".PostsAdsActivity" />
+
+        <activity
+            android:name="com.app.shopchatmyworldra.CartlistActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"
+            android:taskAffinity=".CartlistActivity" />
+        <activity
+            android:name="com.app.shopchatmyworldra.AddAdressActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"
+            android:taskAffinity=".AddAdressActivity" />
+        <activity
+            android:name="com.app.shopchatmyworldra.ActivityAddress"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"
+            android:taskAffinity=".ActivityAddress" />
+        <activity
+            android:name="com.app.shopchatmyworldra.PaymentMethodActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"
+            android:taskAffinity=".ActivityPaymentMethod" />
+        <activity
+            android:name="com.app.shopchatmyworldra.ActivitySortBy"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"
+            android:taskAffinity=".ActivitySortBy" />
+        <activity
+            android:name="com.app.shopchatmyworldra.TermsAndConditionActivity"
+            android:excludeFromRecents="true"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:taskAffinity=".TermsAndConditionActivity" />
+        <activity
+            android:name="com.app.shopchatmyworldra.VerifyMobileActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name="com.app.shopchatmyworldra.FollowersActivity"
+            android:excludeFromRecents="true"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:taskAffinity=".FollowersActivity" />
+        <activity
+            android:name="com.app.shopchatmyworldra.FollowingActivity"
+            android:excludeFromRecents="true"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:taskAffinity=".FollowingActivity" />
+        <activity
+            android:name="com.app.shopchatmyworldra.UserProfileActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"
+            android:taskAffinity=".UserProfileActivity" />
+        <activity
+            android:name="com.app.shopchatmyworldra.CameraActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"
+            android:taskAffinity=".CameraActivity" />
+        <activity
+            android:name="com.app.shopchatmyworldra.ShareFrendsActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"
+            android:taskAffinity=".ShareFrendsActivity" />
+
+        <activity
+            android:name="com.app.shopchatmyworldra.AllSearchActivity"
+            android:excludeFromRecents="true"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:taskAffinity=".AllSearchActivity" />
+        <activity
+            android:name="com.app.shopchatmyworldra.ActivitySubCategory"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"
+            android:taskAffinity=".ActivitySubCategory" />
+
+        <activity
+            android:name="com.app.shopchatmyworldra.BuyActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"
+            android:taskAffinity=".BuyActivity" />
+        <activity
+            android:name="com.app.shopchatmyworldra.SellActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"
+            android:taskAffinity=".SellActivity" />
+
+        <activity
+            android:name="com.app.shopchatmyworldra.ActivityFilter"
+            android:excludeFromRecents="true"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:taskAffinity=".ActivityFilter" />
+        <activity
+            android:name="com.app.shopchatmyworldra.FriendList"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"
+            android:taskAffinity=".FriendList" />
+        <activity
+            android:name="com.app.shopchatmyworldra.MessageActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"
+            android:taskAffinity=".MessageActivity" />
+        <activity
+            android:name="com.app.shopchatmyworldra.AllUserActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"
+            android:taskAffinity=".AllUserActivity" />
+        <activity
+            android:name="com.app.shopchatmyworldra.OrderHistoryActivity"
+            android:excludeFromRecents="true"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:taskAffinity=".OrderHistoryActivity" />
+        <activity
+            android:name="com.app.shopchatmyworldra.ActivityContactUs"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"
+            android:taskAffinity=".ActivityContactUs" />
+        <activity
+            android:name="com.app.shopchatmyworldra.FriendRequest"
+            android:excludeFromRecents="true"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:taskAffinity=".FriendRequest" />
+        <activity
+            android:name="com.app.shopchatmyworldra.ActivityOrderPlaced"
+            android:excludeFromRecents="true"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:taskAffinity=".ActivityOrderPlaced" />
+        <activity
+            android:name="com.app.shopchatmyworldra.PaymentTypeActivity"
+            android:excludeFromRecents="true"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:taskAffinity=".ActivityOrderPlaced" />
+        <activity
+            android:name="com.app.shopchatmyworldra.UserChatMessageActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"
+            android:taskAffinity=".UserChatMessageActivity" />
+
+
+        <activity
+            android:name="com.app.shopchatmyworldra.NewPostActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"
+            android:taskAffinity=".NewPostActivity" />
+        <activity
+            android:name="com.app.shopchatmyworldra.BlockListActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"
+            android:taskAffinity=".NewPostActivity" />
+        <activity
+            android:name="com.app.shopchatmyworldra.ResetPasswordActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"
+            android:taskAffinity=".ResetPasswordActivity" />
+        <activity
+            android:name="com.app.shopchatmyworldra.ActivityPublicUser"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"
+            android:taskAffinity=".ActivityPublicUser" />
+        <activity
+            android:name="com.app.shopchatmyworldra.ForgotPasswordActivity"
+            android:excludeFromRecents="true"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:taskAffinity=".ForgotPasswordActivity" />
+        <activity
+            android:name="com.app.shopchatmyworldra.ActivityComeingsoon"
+            android:excludeFromRecents="true"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:taskAffinity=".ForgotPasswordActivity" />
+        <activity
+            android:name="com.app.shopchatmyworldra.videochat.VoiceCallActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"
+            android:taskAffinity=".VoiceCallActivity" />
+        <activity
+            android:name="com.app.shopchatmyworldra.constant.CropImage"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"
+            android:taskAffinity=".CropImage" />
+
+
+        <service
+            android:name="com.app.shopchatmyworldra.videochat.SinchService"
+            android:enabled="true" />
+
+        <activity
+            android:name="com.app.shopchatmyworldra.videochat.CallScreenActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"
+            android:taskAffinity=".CallScreenActivity" />
+
+        <activity
+            android:name="com.app.shopchatmyworldra.videochat.IncomingCallScreenActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"
+            android:taskAffinity=".IncomingCallScreenActivity" />
+        <activity
+            android:name="com.app.shopchatmyworldra.Audio.AudioPlaybackActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"
+            android:taskAffinity=".AudioPlaybackActivity" />
+
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="d94b867b5c5590ed4e682a230db8f61895ea4053" />
+
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:excludeFromRecents="true"
+            android:label="@string/app_name"
+            android:taskAffinity=".FacebookActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider110973272942413"
+            android:exported="true"/>
+
+
+        <service android:name="com.app.shopchatmyworldra.CustomFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service android:name="com.app.shopchatmyworldra.CustomFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+
+        <!-- <receiver android:name=".SmsBroadcastReceiver" android:exported="true" >
+             <intent-filter android:priority="999" >
+                 <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+             </intent-filter>
+         </receiver>-->
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/logo" />
+
+        <!--<meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyD8PV-TUIY6XKMPYoKGRjyUIO4RXfQMPlM"/>-->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyATL1YJ7QgIvmp3EvE7LSuIcAY-9RIZ_Bk"/>
+
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+
+    <meta-data android:name="instamojo.orderauth.url"
+                   android:value="http://54.149.142.43/access_token.php"
+            />
+    </application>
+
+</manifest>

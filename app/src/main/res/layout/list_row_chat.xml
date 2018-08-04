@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/appBar"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp">
+
+        <LinearLayout
+            android:id="@+id/layout_chat_others"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="250dp"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_corner1"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/llBackgroundImage1"
+                    android:layout_width="250dp"
+                    android:layout_height="200dp"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/chat_imageView1"
+                        android:layout_width="240dp"
+                        android:layout_height="200dp"
+                        android:scaleType="centerCrop"
+                        android:layout_marginRight="10dp"
+                        android:layout_gravity="center"
+                        android:background="@color/dummy_fifth" />
+
+                </RelativeLayout>
+1
+                <RelativeLayout
+                    android:id="@+id/llBackgroundVideo1"
+                    android:layout_width="250dp"
+                    android:layout_height="200dp"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/ivThumbnail1"
+                        android:layout_width="230dp"
+                        android:layout_height="200dp"
+                        android:scaleType="centerCrop"
+                        android:layout_gravity="center"
+                        android:background="@color/dummy_fifth" />
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginRight="10dp">
+                        <com.github.lzyzsd.circleprogress.DonutProgress
+                            android:layout_marginLeft="50dp"
+                            android:id="@+id/donut_progress1"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"/>
+
+                    </RelativeLayout>
+                    <ImageView
+                        android:id="@+id/btnPlay1"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/play" />
+
+
+                </RelativeLayout>
+                <LinearLayout
+                    android:id="@+id/llBackgroundAudio1"
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <ImageButton
+                        android:id="@+id/btnPlayAudio1"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/playgreen" />
+
+                    <SeekBar
+                        android:id="@+id/seek_bar1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:progress="5"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_message_other"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="hi How r u"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:id="@+id/tvTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="18:45"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="right"
+                    android:textColor="#8A9C7D" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_chat_mine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:background="@drawable/rounded_corner"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/llBackgroundImage"
+                android:layout_width="250dp"
+                android:layout_height="200dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/chat_imageView"
+                    android:layout_width="240dp"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:layout_gravity="center"
+                    android:background="@color/dummy_fifth" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/llBackgroundVideo"
+                android:layout_width="250dp"
+                android:layout_height="200dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/ivThumbnail"
+                    android:layout_width="240dp"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:layout_gravity="center"
+                    android:background="@color/dummy_fifth" />
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="10dp">
+                    <com.github.lzyzsd.circleprogress.DonutProgress
+                        android:layout_marginLeft="50dp"
+                        android:id="@+id/donut_progress"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"/>
+
+                </RelativeLayout>
+                <ImageView
+                    android:id="@+id/btnPlay"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/play" />
+
+
+            </RelativeLayout>
+            <LinearLayout
+                android:id="@+id/llBackgroundAudio"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:visibility="gone"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <ImageButton
+                    android:id="@+id/btnPlayAudio"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/playgreen" />
+
+                <SeekBar
+                    android:id="@+id/seek_bar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:progress="5"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_message_mine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="I am good "
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/tvTime1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="18:45"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="right"
+                android:textColor="#8A9C7D" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
